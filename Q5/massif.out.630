@@ -1,0 +1,397 @@
+desc: (none)
+cmd: ./a.out
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=128256
+mem_heap_B=472
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=128683
+mem_heap_B=944
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=129109
+mem_heap_B=1416
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=129704
+mem_heap_B=5512
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=130337
+mem_heap_B=22416
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=130760
+mem_heap_B=30608
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=130960
+mem_heap_B=34704
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=131191
+mem_heap_B=34768
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=132019
+mem_heap_B=34775
+mem_heap_extra_B=113
+mem_stacks_B=0
+heap_tree=detailed
+n5: 34775 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 16904 0x1095C0: redact_words (CWK2Q5.c:192)
+  n0: 16904 0x1097E6: main (CWK2Q5.c:259)
+ n1: 8192 0x1095EF: redact_words (CWK2Q5.c:196)
+  n0: 8192 0x1097E6: main (CWK2Q5.c:259)
+ n1: 8192 0x48D6E83: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 8192 0x48E704F: _IO_doallocbuf (genops.c:347)
+   n1: 8192 0x48E3B14: _IO_file_seekoff@@GLIBC_2.2.5 (fileops.c:938)
+    n2: 8192 0x48E04FC: fseek (fseek.c:36)
+     n1: 4096 0x1092CE: fsize (CWK2Q5.c:38)
+      n1: 4096 0x1095AB: redact_words (CWK2Q5.c:190)
+       n0: 4096 0x1097E6: main (CWK2Q5.c:259)
+     n1: 4096 0x109609: redact_words (CWK2Q5.c:199)
+      n0: 4096 0x1097E6: main (CWK2Q5.c:259)
+ n1: 1416 0x48D7AAD: __fopen_internal (iofopen.c:65)
+  n3: 1416 0x48D7AAD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x109557: redact_words (CWK2Q5.c:180)
+    n0: 472 0x1097E6: main (CWK2Q5.c:259)
+   n1: 472 0x10956E: redact_words (CWK2Q5.c:181)
+    n0: 472 0x1097E6: main (CWK2Q5.c:259)
+   n1: 472 0x109585: redact_words (CWK2Q5.c:182)
+    n0: 472 0x1097E6: main (CWK2Q5.c:259)
+ n0: 71 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=132155
+mem_heap_B=34775
+mem_heap_extra_B=113
+mem_stacks_B=0
+heap_tree=peak
+n5: 34775 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 16904 0x1095C0: redact_words (CWK2Q5.c:192)
+  n0: 16904 0x1097E6: main (CWK2Q5.c:259)
+ n1: 8192 0x1095EF: redact_words (CWK2Q5.c:196)
+  n0: 8192 0x1097E6: main (CWK2Q5.c:259)
+ n1: 8192 0x48D6E83: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 8192 0x48E704F: _IO_doallocbuf (genops.c:347)
+   n1: 8192 0x48E3B14: _IO_file_seekoff@@GLIBC_2.2.5 (fileops.c:938)
+    n2: 8192 0x48E04FC: fseek (fseek.c:36)
+     n1: 4096 0x1092CE: fsize (CWK2Q5.c:38)
+      n1: 4096 0x1095AB: redact_words (CWK2Q5.c:190)
+       n0: 4096 0x1097E6: main (CWK2Q5.c:259)
+     n1: 4096 0x109609: redact_words (CWK2Q5.c:199)
+      n0: 4096 0x1097E6: main (CWK2Q5.c:259)
+ n1: 1416 0x48D7AAD: __fopen_internal (iofopen.c:65)
+  n3: 1416 0x48D7AAD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x109557: redact_words (CWK2Q5.c:180)
+    n0: 472 0x1097E6: main (CWK2Q5.c:259)
+   n1: 472 0x10956E: redact_words (CWK2Q5.c:181)
+    n0: 472 0x1097E6: main (CWK2Q5.c:259)
+   n1: 472 0x109585: redact_words (CWK2Q5.c:182)
+    n0: 472 0x1097E6: main (CWK2Q5.c:259)
+ n0: 71 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=11
+#-----------
+time=132155
+mem_heap_B=34768
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=132999
+mem_heap_B=34779
+mem_heap_extra_B=109
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=133175
+mem_heap_B=34768
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=133968
+mem_heap_B=34778
+mem_heap_extra_B=110
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=134148
+mem_heap_B=34768
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=134752
+mem_heap_B=34774
+mem_heap_extra_B=114
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=134926
+mem_heap_B=34768
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=136070
+mem_heap_B=34785
+mem_heap_extra_B=119
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=136306
+mem_heap_B=34768
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=136740
+mem_heap_B=34771
+mem_heap_extra_B=117
+mem_stacks_B=0
+heap_tree=detailed
+n5: 34771 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 16904 0x1095C0: redact_words (CWK2Q5.c:192)
+  n0: 16904 0x1097E6: main (CWK2Q5.c:259)
+ n1: 8192 0x1095EF: redact_words (CWK2Q5.c:196)
+  n0: 8192 0x1097E6: main (CWK2Q5.c:259)
+ n1: 8192 0x48D6E83: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 8192 0x48E704F: _IO_doallocbuf (genops.c:347)
+   n1: 8192 0x48E3B14: _IO_file_seekoff@@GLIBC_2.2.5 (fileops.c:938)
+    n2: 8192 0x48E04FC: fseek (fseek.c:36)
+     n1: 4096 0x1092CE: fsize (CWK2Q5.c:38)
+      n1: 4096 0x1095AB: redact_words (CWK2Q5.c:190)
+       n0: 4096 0x1097E6: main (CWK2Q5.c:259)
+     n1: 4096 0x109609: redact_words (CWK2Q5.c:199)
+      n0: 4096 0x1097E6: main (CWK2Q5.c:259)
+ n1: 1416 0x48D7AAD: __fopen_internal (iofopen.c:65)
+  n3: 1416 0x48D7AAD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x109557: redact_words (CWK2Q5.c:180)
+    n0: 472 0x1097E6: main (CWK2Q5.c:259)
+   n1: 472 0x10956E: redact_words (CWK2Q5.c:181)
+    n0: 472 0x1097E6: main (CWK2Q5.c:259)
+   n1: 472 0x109585: redact_words (CWK2Q5.c:182)
+    n0: 472 0x1097E6: main (CWK2Q5.c:259)
+ n0: 67 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=21
+#-----------
+time=136984
+mem_heap_B=34768
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=137671
+mem_heap_B=34776
+mem_heap_extra_B=112
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=137915
+mem_heap_B=34768
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=138708
+mem_heap_B=34778
+mem_heap_extra_B=110
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=138952
+mem_heap_B=34768
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=139267
+mem_heap_B=26576
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=514839
+mem_heap_B=27600
+mem_heap_extra_B=96
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=519509
+mem_heap_B=31696
+mem_heap_extra_B=104
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=520127
+mem_heap_B=14792
+mem_heap_extra_B=88
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=520158
+mem_heap_B=14728
+mem_heap_extra_B=80
+mem_stacks_B=0
+heap_tree=detailed
+n3: 14728 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 13312 0x48D6E83: _IO_file_doallocate (filedoalloc.c:101)
+  n2: 13312 0x48E704F: _IO_doallocbuf (genops.c:347)
+   n1: 8192 0x48E3B14: _IO_file_seekoff@@GLIBC_2.2.5 (fileops.c:938)
+    n2: 8192 0x48E04FC: fseek (fseek.c:36)
+     n1: 4096 0x1092CE: fsize (CWK2Q5.c:38)
+      n1: 4096 0x1095AB: redact_words (CWK2Q5.c:190)
+       n0: 4096 0x1097E6: main (CWK2Q5.c:259)
+     n1: 4096 0x109609: redact_words (CWK2Q5.c:199)
+      n0: 4096 0x1097E6: main (CWK2Q5.c:259)
+   n1: 5120 0x48E60AF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 5120 0x48E4834: _IO_new_file_xsputn (fileops.c:1244)
+     n2: 5120 0x48E4834: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 4096 0x48CC27B: __vfprintf_internal (vfprintf-internal.c:1688)
+       n1: 4096 0x48B6DE9: fprintf (fprintf.c:32)
+        n1: 4096 0x109775: redact_words (CWK2Q5.c:245)
+         n0: 4096 0x1097E6: main (CWK2Q5.c:259)
+      n1: 1024 0x48D9677: puts (ioputs.c:40)
+       n1: 1024 0x109759: redact_words (CWK2Q5.c:242)
+        n0: 1024 0x1097E6: main (CWK2Q5.c:259)
+ n1: 1416 0x48D7AAD: __fopen_internal (iofopen.c:65)
+  n3: 1416 0x48D7AAD: fopen@@GLIBC_2.2.5 (iofopen.c:86)
+   n1: 472 0x109557: redact_words (CWK2Q5.c:180)
+    n0: 472 0x1097E6: main (CWK2Q5.c:259)
+   n1: 472 0x10956E: redact_words (CWK2Q5.c:181)
+    n0: 472 0x1097E6: main (CWK2Q5.c:259)
+   n1: 472 0x109585: redact_words (CWK2Q5.c:182)
+    n0: 472 0x1097E6: main (CWK2Q5.c:259)
+ n0: 0 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=31
+#-----------
+time=520398
+mem_heap_B=10632
+mem_heap_extra_B=72
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=520531
+mem_heap_B=10160
+mem_heap_extra_B=56
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=520770
+mem_heap_B=6064
+mem_heap_extra_B=48
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=520903
+mem_heap_B=5592
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=524334
+mem_heap_B=4568
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=524368
+mem_heap_B=472
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
